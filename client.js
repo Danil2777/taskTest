@@ -9,7 +9,7 @@ const getFeedbackByProductViewData = async (product, actualize = false) => {
             const user = usersData.data.users.find(u => u.id === f.userId);
 
             const res = {
-                user: user.name + ' ' + user.email,
+                user: user.name + ' (' + user.email + ')',
                 message: f.message,
                 date: f.date
             }
